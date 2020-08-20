@@ -1,0 +1,9 @@
+---
+# vars file for common
+
+package:
+    - htop
+    - tree
+    - nano
+    - epel-release
+    - fail2ban

@@ -1,0 +1,12 @@
+---
+# tasks file for common
+- name: "update cache"
+  package:
+    update_cache: yes
+  become: yes
+
+- name: "install basic packages"
+  package:
+    name: "{{ item }}"
+    state: latest
+  with_items: "{{ package }}"
