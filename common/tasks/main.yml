@@ -10,3 +10,8 @@
     name: "{{ item }}"
     state: latest
   with_items: "{{ package }}"
+
+- name: "copy fail2ban conf"
+  copy:
+    src: "{{ role_path }}"/files/ssh.conf
+    dest: /etc/fail2ban/jail.d

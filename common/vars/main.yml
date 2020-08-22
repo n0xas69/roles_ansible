@@ -7,3 +7,5 @@ package:
     - nano
     - epel-release
     - fail2ban
+    - npm
+    - tldr
